@@ -13,7 +13,7 @@ namespace GQLTest.Data.models
         public string DenominacionEmpresa { get; set; }
         public int IdSucursal { get; set; }
         public string DenominacionSucursal { get; set; }
-        public int? IdRepartidor { get; set; }
+        public int IdRepartidor { get; set; }
         public string DocumentoRepartidor { get; set; }
         public string DenominacionRepartidor { get; set; }
         public int IdCliente { get; set; }
@@ -26,7 +26,7 @@ namespace GQLTest.Data.models
         public int IdTipoDelivery { get; set; }
         public string TipoDelivery { get; set; }
         public int NumeroPedido { get; set; }
-        public DateTime FechaPedido { get; set; }
+        public DateTime FechaPedido { get; set; }    
         public DateTime FechaEntrega { get; set; }
         public string TelefonoRetiro { get; set; }
         public string UbicacionRetiro { get; set; }

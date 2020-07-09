@@ -13,6 +13,12 @@ namespace GQLTest.Models
             Field<ListGraphType<PedidoQueryType>>(
                 "pedidoquerys",
                 resolve: context => pedidoQueryRepository.All());
+            Field<PedidoQueryType>(
+                "pedido",
+                arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "id" }),
+                resolve: context => pedidoQueryRepository.Get(context.GetArgument<int>("id")));
+            
         }
+        
     }
 }
