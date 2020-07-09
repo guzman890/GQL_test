@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GQLTest", "GQLTest\GQLTest.csproj", "{222C49B6-6FFC-4391-9EE2-05FCD9E7929A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GQLTest.Data", "GQLTest.Data\GQLTest.Data.csproj", "{8D83D3F8-4BFA-437A-B2FB-B2B045AB2316}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GQLTest.Data", "GQLTest.Data\GQLTest.Data.csproj", "{8D83D3F8-4BFA-437A-B2FB-B2B045AB2316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GQLTest.Repository", "GQLTest.Repository\GQLTest.Repository.csproj", "{62428CAE-E0C5-4733-9CA4-68BAAE9CE5D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8D83D3F8-4BFA-437A-B2FB-B2B045AB2316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D83D3F8-4BFA-437A-B2FB-B2B045AB2316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D83D3F8-4BFA-437A-B2FB-B2B045AB2316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62428CAE-E0C5-4733-9CA4-68BAAE9CE5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62428CAE-E0C5-4733-9CA4-68BAAE9CE5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62428CAE-E0C5-4733-9CA4-68BAAE9CE5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62428CAE-E0C5-4733-9CA4-68BAAE9CE5D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
