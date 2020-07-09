@@ -1,17 +1,18 @@
 ﻿using GQLTest.Helpers;
 using GQLTest.models;
 using GraphQL.Types;
+using GQLTest.Repository.repository;
 
 namespace GQLTest.Models
 {
     public class StatsQuery : ObjectGraphType
     {
-        public StatsQuery(ContextServiceLocator contextServiceLocator)
+        public StatsQuery(IPedidoQueryRepository pedidoQueryRepository )
         {
 
             Field<ListGraphType<PedidoQueryType>>(
                 "pedidoquerys",
-                resolve: context => contextServiceLocator.PedidoQueryRepository.All());
+                resolve: context => pedidoQueryRepository.All());
         }
     }
 }

@@ -26,9 +26,5 @@
     <ProjectReference Include="..\GQLTest.Repository\GQLTest.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Types\" />
-  </ItemGroup>
-
 
 </Project>

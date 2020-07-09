@@ -12,7 +12,7 @@ using GQLTest.models;
 using GraphQL.Types;
 using GraphQL;
 using GraphiQl;
-
+using GQLTest.Data.models;
 
 namespace GQLTest
 {
@@ -32,7 +32,7 @@ namespace GQLTest
             
             services.AddHttpContextAccessor();
             services.AddSingleton<ContextServiceLocator>();
-            services.AddDbContext<StatsContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddDbContext<DBYoinTestContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IPedidoQueryRepository, PedidoQueryRepository>();
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<StatsQuery>();
@@ -43,7 +43,7 @@ namespace GQLTest
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, StatsContext db)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
