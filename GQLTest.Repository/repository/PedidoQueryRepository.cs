@@ -23,9 +23,15 @@ namespace GQLTest.Repository.repository
                 var x = await _db.PedidoQuery.ToListAsync();
                 return x;
             }
-            catch(Exception ex){
+            catch (Exception ex)
+            {
                 throw ex;
             }
+        }
+
+        public async Task<PedidoQuery> Get(int id)
+        {
+            return await _db.PedidoQuery.FirstOrDefaultAsync(p => p.IdPedido == id);
         }
     }
 }

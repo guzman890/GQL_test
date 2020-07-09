@@ -7,5 +7,6 @@ namespace GQLTest.Repository.repository
     public interface IPedidoQueryRepository
     {
         Task<List<PedidoQuery>> All();
+        Task<PedidoQuery> Get(int id);
     }
 }
